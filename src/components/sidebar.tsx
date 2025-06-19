@@ -13,6 +13,7 @@ export function Sidebar() {
 
   const navigation = [
     { name: "Tâches", href: "/taches" },
+    { name: "Citations", href: "/citations" },
     ...(isAdmin ? [{ name: "Admin", href: "/admin" }] : []),
   ];
 

@@ -46,6 +46,9 @@ export const authOptions: AuthOptions = {
       }
     })
   ],
+  session:{
+    maxAge: 24 * 60 * 60,
+  },
   callbacks: {
     async jwt({ token, user }: { token: JWT; user: User | null }) {
       if (user) {

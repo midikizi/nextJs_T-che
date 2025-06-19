@@ -2,7 +2,7 @@ import axios from "axios";
 import { getSession } from "next-auth/react";
 
 const instance = axios.create({
-    baseURL: 'http://127.0.0.1:8000/taches/',
+    baseURL: 'http://127.0.0.1:8000/',
     timeout: 1000,
   });
   
